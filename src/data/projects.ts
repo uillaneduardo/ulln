@@ -8,7 +8,7 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  { slug: 'wapphub', name: 'WappHub', category: 'Comunicação', summary: 'Plataforma de mensagens e atendimento multicanal em desenvolvimento.', url: 'https://wapphub.com.br', featured: true },
+  { slug: 'wapphub', name: 'WappHub', category: 'Comunicação', summary: 'Plataforma de mensagens e atendimento multicanal em desenvolvimento.', url: 'https://wapphub.ulln.com.br', featured: true },
   { slug: 'cenalivre', name: 'CenaLivre', category: 'Mídia', summary: 'Portal de séries, episódios e produções audiovisuais.', url: 'https://cenalivre.ulln.com.br', featured: true },
   { slug: 'finfam', name: 'FinFam', category: 'Finanças', summary: 'Aplicação de organização e acompanhamento das finanças familiares.', url: 'https://finfam.wapphub.com.br', featured: true },
   { slug: 'pksig', name: 'PKSIG', category: 'Gestão', summary: 'Sistema de gestão voltado à rotina de assistência técnica.', url: 'https://pksig.wapphub.com.br' },
