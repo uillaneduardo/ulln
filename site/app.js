@@ -24,7 +24,7 @@ const pages = {
       <div class="intro-actions"><a class="primary" href="/sobre" data-link>Sobre mim ↗</a><a class="subtle" href="/laboratorio" data-link>Meu laboratório →</a></div>
     </section>
     <section class="work panel"><div class="section-header"><div><span class="eyebrow">Projetos / Acesso rápido</span><h2>O que estou construindo</h2></div><a href="/projetos" data-link class="all-link">Ver projetos →</a></div>
-      <div class="projects">${cards(projects)}</div>
+      <div class="projects">${cards(projects.slice(0, 6))}</div>
     </section>
   </div>`,
   '/projetos': () => `<section class="full panel"><div class="section-header"><div><span class="eyebrow">Portfólio / Projetos</span><h1>Aplicações e experimentos.</h1><p>Projetos em desenvolvimento. Cada link abre uma nova guia.</p></div></div><div class="controls"><label><span class="sr">Buscar projetos</span><input id="search" type="search" placeholder="Buscar projeto..." autocomplete="off"></label><label><span class="sr">Filtrar categoria</span><select id="category"><option value="">Todas as categorias</option>${[...new Set(projects.map(p=>p.kind))].map(c=>`<option>${esc(c)}</option>`).join('')}</select></label></div><div class="projects projects-full" id="results"></div><p class="empty" id="no-results" hidden>Nenhum projeto encontrado.</p></section>`,
