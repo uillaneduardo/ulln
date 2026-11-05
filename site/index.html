@@ -3,34 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f7f5">
-  <meta name="description" content="ULLN — Projetos, tecnologia, eletrônica e software por Uillan Eduardo.">
+  <meta name="theme-color" content="#f7f8f6">
+  <meta name="description" content="ULLN — Site pessoal, projetos e experimentos de Uillan Eduardo.">
   <title>ULLN — Uillan Eduardo</title>
   <link rel="stylesheet" href="/styles.css">
   <script src="/app.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#conteudo">Ir para o conteúdo</a>
-  <header class="site-header">
-    <div class="wrap nav-row">
-      <a href="/" class="brand" data-link aria-label="ULLN — Início"><span class="mark">u.</span><span>ulln<span class="brand-dot">.</span></span></a>
-      <nav class="desktop-nav" aria-label="Navegação principal">
+  <div class="shell">
+    <header class="header">
+      <a class="brand" href="/" data-link aria-label="ULLN, início"><span class="logo">u<span>.</span></span><span>ulln<span class="brand-dot">.</span></span></a>
+      <nav aria-label="Navegação principal" class="nav">
         <a href="/" data-link data-nav="/">Início</a>
         <a href="/projetos" data-link data-nav="/projetos">Projetos</a>
         <a href="/laboratorio" data-link data-nav="/laboratorio">Laboratório</a>
         <a href="/sobre" data-link data-nav="/sobre">Sobre</a>
       </nav>
-      <a class="github-link" target="_blank" rel="noopener noreferrer" href="https://github.com/uillaneduardo">GitHub <span aria-hidden="true">↗</span></a>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav"><span aria-hidden="true">☰</span></button>
-    </div>
-    <nav id="mobile-nav" class="mobile-nav" aria-label="Navegação móvel" hidden>
-      <a href="/" data-link data-nav="/">Início</a>
-      <a href="/projetos" data-link data-nav="/projetos">Projetos</a>
-      <a href="/laboratorio" data-link data-nav="/laboratorio">Laboratório</a>
-      <a href="/sobre" data-link data-nav="/sobre">Sobre</a>
-    </nav>
-  </header>
-  <main id="conteudo" tabindex="-1"></main>
-  <footer class="footer"><div class="wrap foot-row"><span>© <span id="year"></span> ULLN · Uillan Eduardo</span><span>Feito com HTML, CSS e JavaScript.</span><a href="https://github.com/uillaneduardo" target="_blank" rel="noopener noreferrer">Código e projetos ↗</a></div></footer>
+      <a class="github" href="https://github.com/uillaneduardo" rel="noopener noreferrer" target="_blank">GitHub ↗</a>
+    </header>
+    <main id="conteudo" class="main" tabindex="-1"></main>
+    <footer class="footer"><span>© <span id="year"></span> ULLN · Uillan Eduardo</span><span>Software · Eletrônica · Infraestrutura</span><a href="https://github.com/uillaneduardo" target="_blank" rel="noopener noreferrer">Repositórios ↗</a></footer>
+  </div>
 </body>
 </html>
